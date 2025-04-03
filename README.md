@@ -104,7 +104,7 @@ Typical accuracy observed: **72%-78.5%**
 | Model           | Accuracy       |
 |-----------------|:--------------:|
 | Base Model     | ~40 - 60%       |
-| Improved Model | ~70% - 78.5%    |
+| Improved Model | ~70% - 81.25%    |
 
 **Example Visualization (True vs Predicted):**
 
