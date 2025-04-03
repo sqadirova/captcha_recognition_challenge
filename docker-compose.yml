@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  captcha-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_PATH=model/improved_captcha_model.pth
+    restart: always
