@@ -96,7 +96,7 @@ I improved the model by applying the following:
 - Model Architecture Extension (Added extra CNN and BatchNorm layers)
 
 **Accuracy after improvement:**
-Accuracy varied between **70% - 78.5%** due to random seed and augmentation. <br>
+Accuracy varied between **70% - 81.25%** due to random seed and augmentation. <br>
 Typical accuracy observed: **72%-78.5%**
 
 **Before/After Comparison:**
