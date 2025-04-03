@@ -15,7 +15,7 @@ app.add_exception_handler(RateLimitExceeded, lambda request, exc: JSONResponse(s
 
 @app.post("/predict")
 @limiter.limit("5/minute")
-async def predict(request: Request, file: UploadFile = File(...)):
+async def predict(request: Request, file: UploadFile = File(..., description="Upload .png, .jpg, .jpeg image file")):
     if not file.filename.lower().endswith((".png", ".jpg", ".jpeg")):
         raise HTTPException(status_code=400, detail="Invalid file format")
 

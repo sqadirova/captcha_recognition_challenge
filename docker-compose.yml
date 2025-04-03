@@ -1,3 +1,14 @@
+# version: "3"
+
+# services:
+#   captcha-api:
+#     build: .
+#     ports:
+#       - "8000:8000"
+#     environment:
+#       - MODEL_PATH=model/improved_captcha_model.pth
+#     restart: always
+
 version: "3"
 
 services:
@@ -6,5 +17,9 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - MODEL_PATH=model/improved_captcha_model.pth
+      - MODEL_PATH=./model/captcha_model_improved.pth
+      - IDX_TO_CHAR_PATH=./model/idx_to_char.json
+      - IMG_WIDTH=65
+      - IMG_HEIGHT=25
+      - DROPOUT_RATE=0.3
     restart: always
