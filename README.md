@@ -85,7 +85,7 @@ API accepts only `.png, .jpg, .jpeg` formats.
 
 ## 7. Summary
 
-Throughout this challenge, I enhanced my knowledge in deep learning model optimization, model serving, and containerization. I learned the importance of data augmentation, preprocessing, and efficient API deployment. I also added optional features like confidence score and rate limiting to improve the API usability. One challenge was achieving consistent accuracy due to randomness in training and augmentation.
+Throughout this challenge, I gained hands-on experience in deep learning model optimization. I explored new concepts such as data augmentation and confidence score generation, which significantly improved my understanding of model robustness and usability. Implementing optional features like rate limiting and confidence scoring helped me enhance the overall API functionality. One key challenge I faced was maintaining consistent accuracy due to randomness in training and augmentation, which taught me the importance of reproducibility and tuning.
 
 
 ## Part 1: Model Improvement
