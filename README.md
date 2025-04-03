@@ -94,6 +94,7 @@ The base model initially had an accuracy of **~40-60%**.  When I run it first it
 I improved the model by applying the following:
 - Data Augmentation (Random rotation, affine transformations, color jitter)
 - Model Architecture Extension (Added extra CNN and BatchNorm layers)
+- True vs. Predicted Label Visualization
 
 **Accuracy after improvement:**
 Accuracy varied between **70% - 81.25%** due to random seed and augmentation. <br>
