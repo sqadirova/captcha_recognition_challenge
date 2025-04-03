@@ -1,30 +1,3 @@
-# import torch.nn as nn
-# import torch
-
-# class CaptchaModel(nn.Module):
-#     def __init__(self, num_chars, dropout_rate=0.3):
-#         super().__init__()
-#         self.cnn = nn.Sequential(
-#             nn.Conv2d(1, 12, kernel_size=3, padding=1),
-#             nn.BatchNorm2d(12),
-#             nn.MaxPool2d(2, 2)
-#         )
-#         self.reshape = nn.Linear(12 * (25 // 2), 48)
-#         self.dropout = nn.Dropout(dropout_rate)
-#         self.lstm = nn.LSTM(48, 48, bidirectional=True, batch_first=True)
-#         self.classifier = nn.Linear(96, num_chars + 1)
-
-#     def forward(self, x):
-#         x = self.cnn(x)
-#         b, c, h, w = x.size()
-#         x = x.permute(0, 3, 1, 2).reshape(b, w, c * h)
-#         x = self.reshape(x)
-#         x = self.dropout(x)
-#         x, _ = self.lstm(x)
-#         x = self.classifier(x)
-#         return nn.functional.log_softmax(x, dim=2)
-
-
 import torch.nn as nn
 from app.config import CONFIG
 

@@ -5,3 +5,5 @@ torchvision==0.17.0
 pillow==9.5.0
 python-multipart==0.0.9
 numpy==1.24.4
+slowapi==0.1.4
+
